@@ -52,3 +52,30 @@ console.log(typeof null);
 //        Arrays  =>  object
 //        Function  =>  function
 //        Object  =>  object
+
+
+
+// ***********Stack and Heap Memory*********
+// Stack => used in primitive type i.e it gives a copy for further modification
+
+let myName = "Anirudh"
+let anotherName = myName
+anotherName="Vashu"
+
+console.log(myName);
+console.log(anotherName)
+
+
+
+// Heap => used in non-primitive tyoe i.e it gives direct reference for further modification
+
+let userOne = {
+    email:"user@gmail.com",
+    upi : "User@ybl",
+}
+
+let userTwo =userOne
+userTwo.email="newuser@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
