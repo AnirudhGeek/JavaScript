@@ -59,3 +59,22 @@ console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 console.log(tinderUser.hasOwnProperty('isLogged'));
+
+
+const course = {
+    courseName : "JS",
+    price : "99",
+    courseDomain : "Web-Dev"
+}
+
+console.log(course.courseDomain);
+
+const {courseDomain : domain} = course  //de-structured object
+console.log(domain)
+
+
+//concept in react 
+const navbar = ({company}) => {        // same as writing const navbar = (props.company)=> {}
+
+}
+navbar(company = "hitesh")
